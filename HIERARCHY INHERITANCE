@@ -38,3 +38,10 @@ public class HierarchicalInheritanceExample {
         cow.moo();   // from Cow   
      }  
 }
+OUTPUT:
+I can eat
+I can bark
+I can eat
+I can meow
+I can eat
+I can moo
