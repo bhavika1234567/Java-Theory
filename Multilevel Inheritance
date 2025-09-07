@@ -1,0 +1,36 @@
+// Grandparent class
+class Animal {
+    void drink() {
+        System.out.println("This animal drinks water.");
+    }
+}
+// Parent class (inherits Animal)
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+// Child class (inherits Dog)
+class Puppy extends Dog {
+    void weep() {
+        System.out.println("The puppy weeps.");
+    }
+}
+// Main class
+public class MultilevelInheritanceExample {
+    public static void main(String[] args) {
+        // Create object of Puppy
+        Puppy p = new Puppy();
+        // Puppy can use its own method
+        p.weep();
+        // Puppy can also use parent class method (Dog)
+        p.bark();
+        // Puppy can also use grandparent class method (Animal)
+        p.drink();
+    }
+}
+
+OUTPUT:
+The puppy weeps.
+The dog barks.
+This animal drinks water.
